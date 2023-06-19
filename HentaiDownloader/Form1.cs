@@ -45,11 +45,13 @@ namespace HentaiDownloader
                         {
                             images.Enqueue(url);
                             var Responce_ = await client.GetAsync(url);
-                            using (var file = System.IO.File.Create(DownloadPath + @"\" + id + ".jpg"))
+                            using (var file = System.IO.File.Create(DownloadPath + @"\" + id + ".png"))
                             {
+                                i++;
                                 var contentStream = await Responce_.Content.ReadAsStreamAsync();
                                 await contentStream.CopyToAsync(file);
-                                i++;
+                                
+                                if (!Download) { return; }
                             }
                         }
                     }
@@ -87,12 +89,14 @@ namespace HentaiDownloader
             HentaiDownload();
             button1.Enabled = false;
             button2.Enabled = true;
+            button3.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             button1.Enabled = true;
             button2.Enabled = false;
+            button3.Enabled = true;
             Download = false;
             images.Clear();
             MessageBox.Show("Успешно загружено " + i + " фотографий");
