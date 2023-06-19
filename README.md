@@ -1,14 +1,14 @@
-Open-source app for download hentai on your pc
+**Open-source app for download hentai on your pc**
  
-All images download to you from https://gelbooru.com/
+*All images download to you from https://gelbooru.com/
 Default download folder: Desktop\DownloadedHentai\
-all images are saved in .png
+all images are saved in .png*
 
 
-v1.0 
+**v1.0** 
 
--Yes I created it
+*-Yes I created it*
 
-coming soon:
+**coming soon:**
 
-Download by tags.
+*Download by tags.*
