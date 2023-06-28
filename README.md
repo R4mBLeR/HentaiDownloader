@@ -3,7 +3,6 @@
 - *All images download to you from https://gelbooru.com/*
 - *Default download folder: Desktop\DownloadedHentai\*
 - *all images are saved in .png*
-- *.exe file in \setup*
 
 
 **v1.0** 
