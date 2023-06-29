@@ -16,7 +16,7 @@ namespace HentaiDownloader
     public partial class Form1 : Form
     {
         public bool Download;
-        private const string path = "https://gelbooru.com/index.php?page=dapi&s=post&q=index&limit=250";
+        private const string path = "https://gelbooru.com/index.php?page=dapi&s=post&q=index&limit=500";
         private string data;
         private string url;
         private string DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
